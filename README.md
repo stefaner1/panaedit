@@ -6,7 +6,7 @@ Web based tool to create pannellum.js scene files with some extended functionali
 
 for an example finished tour, visit: 
 
-[https://stackblitz.com/~/github.com/stefaner/panaedit](https://stackblitz.com/~/github.com/stefaner/panaedit)
+[https://stackblitz.com/~/github.com/stefaner1/panaedit](https://stackblitz.com/~/github.com/stefaner1/panaedit)
 ### quick guide
 - select `try online with demo assets`
 - from a list of images, press `add scene` to load that image into the project
