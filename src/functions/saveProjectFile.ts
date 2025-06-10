@@ -9,7 +9,16 @@ const fileOptions = {
 
 // Helper function to clean up hotspots before saving
 const prepareHotspotsForSave = (scenes: { [key: string]: Scene }) => {
-	const processedScenes = { ...scenes };
+	// Create a deep copy of the scenes object
+	const processedScenes = Object.fromEntries(
+	Object.entries(scenes).map(([key, scene]) => [
+	    key,
+	    {
+		...scene,
+		hotSpots: scene.hotSpots ? [...scene.hotSpots] : []
+	    }
+	])
+	);
 	
 	// Process each scene's hotspots
 	for (const sceneKey in processedScenes) {
